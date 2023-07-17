@@ -1,6 +1,6 @@
 CC = c++
 NAME = convert
-FLAGS = -Wall -Werror -Wextra -std=c++98 -fsanitize=address -g
+FLAGS = -Wall -Werror -Wextra -std=c++98
 FILES = main.cpp ScalarConverter.cpp
 FILES_O = $(FILES:.cpp=.o)
 
