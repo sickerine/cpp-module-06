@@ -6,7 +6,7 @@
 /*   By: mcharrad <mcharrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 09:23:54 by mcharrad          #+#    #+#             */
-/*   Updated: 2023/07/06 11:31:49 by mcharrad         ###   ########.fr       */
+/*   Updated: 2023/07/17 09:11:43 by mcharrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ double strtodouble(const std::string & str)
 float strtofloat(const std::string & str)
 {
     errno = 0;
-    float val = std::strtod(str.c_str(), 0);
+    float val = std::strtof(str.c_str(), 0);
     if (errno == ERANGE)
         throw std::exception();
     return val;

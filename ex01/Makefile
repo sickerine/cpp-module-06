@@ -1,5 +1,5 @@
 CC = c++
-NAME = animal
+NAME = serial
 FLAGS = -Wall -Werror -Wextra -std=c++98 -fsanitize=address -g
 FILES = main.cpp Serializer.cpp
 FILES_O = $(FILES:.cpp=.o)
